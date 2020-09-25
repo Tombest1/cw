@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="icon.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #top{
+            width: 100%;
+            background-color: tomato;
+            height: 50px;
+
+        }
+        #logo{
+            width: 250px;
+            float: left;
+            border: solid 5px pink;
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+        #logo h2{
+            font-family: cursive;
+            color: black;
+        }    
+        #logo #mic{
+            color: white;
+            
+        }
+        .menu{
+            width: 500px;
+            border: black solid;
+            float: left;
+            margin-top: 17px;
+            padding-left: 100px;
+        }
+        .menu a{
+            padding: 8px;
+            text-decoration: none;
+            color: white;
+            font-family: roboto;
+        }
+        #social{
+            width: 150px;
+            float: right;
+            border: solid blue;
+            margin-top: 10px;
+            margin-right: 150px;
+        }
+        #bars{
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            display: none;
+        }
+
+    
+
+        @media(max-width: 1277px){
+        
+            #social{
+          
+            margin-right: 100px;
+        }
+           
+            
+
+        }
+
+
+        @media(max-width: 1250px){
+        
+        #logo{
+            margin-left: 30px;
+           
+            }
+           
+
+        }
+        @media(max-width: 1200px){
+
+            .menu{
+                width: 100px;
+                padding: 0px;
+                display: none;
+                position: relative;
+                top:30px ;
+                
+            }
+            #logo{
+                margin-left: 10px;
+                margin-top: 5px;
+                
+            }
+            #social{
+                position: absolute;
+                left:450px;
+            }
+
+            .show{
+                display: block;
+                
+            }
+            .menu a{
+            text-decoration: none;
+            color:black;
+            
+            }
+            
+
+            #bars{
+                display: block;
+            }
+          
+        }
+
+            
+        
+        @media(max-width: 700px){
+            #logo{
+                position: relative;
+            }
+
+
+            #social{
+                position: absolute;
+                left:250px;
+            }
+
+        }
+        
+        @media(max-width: 500px){
+            #logo{
+                margin-left: 10px;
+                width: 210px;
+                margin-top: 5px;
+            }
+            #social{
+                position: absolute;
+                left:250px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section sec1>
+            <div id="top">
+                <div id="logo"><h2>Emmanuel <span id="mic">Micheal</span></h2></div>
+                <div class="menu">
+                    <a href="">HOME</a>
+                    <a href="">ABOUT US</a>
+                    <a href="">CONTACT</a>
+                    <a href="">SOLUTION</a>
+                    <a href="">FAQ</a>
+                </div>
+                <div id="social">
+                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square fa-2x" aria-hidden="true "></i>
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square fa-2x" aria-hidden ="true"></i>
+
+                </div>
+                <div id="bars">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+
+                </div>
+            </div>
+            <div>
+                <h1>sample</h1>
+            </div>
+            
+    </div>
+   
+    
+</body>
+<script>
+    let toggleMenu = document.querySelector('#bars');
+    let myMenu = document.querySelector('.menu');
+    toggleMenu.addEventListener('click',myToggle);
+    function myToggle() {
+        myMenu.classList.toggle('show')
+        
+    }
+
+
+
+</script>
+</html>
